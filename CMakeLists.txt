@@ -6,7 +6,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 ####################
 #  General settings
 include(option)
-option_enum(NAME CMAKE_BUILD_TYPE HELP "Choose the type of build" VALUE Debug Release Regression Optimized)
+option_enum(NAME CMAKE_BUILD_TYPE HELP "Choose the type of build" VALUE Release Debug Regression Optimized)
 option(ENABLE_PTHREAD "use pthreads" ON)
 set(HAVE_PTHREADS ${ENABLE_PTHREAD})
 option(ENABLE_UNITTEST "enable unittest" ON)
